@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Vải Thun Minh Khôi cung cấp cotton, bamboo, visco, cá sấu, mè thể thao và TICI; hỗ trợ dệt, nhuộm, in theo yêu cầu.">
-  <meta name="theme-color" content="#07162d">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vải Thun Minh Khôi chuyên cung cấp vải thun cho xưởng may, local brand và doanh nghiệp; hỗ trợ tư vấn chất liệu, màu sắc và giao hàng toàn quốc.">
+  <meta name="theme-color" content="#072a5d">
   <title>Vải Thun Minh Khôi | Minh Khôi Textile</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,178 +12,209 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="topbar">VẢI THUN MINH KHÔI · HỖ TRỢ TƯ VẤN VÀ GIAO HÀNG TOÀN QUỐC</div>
+  <a class="skip-link" href="#main">Đi đến nội dung chính</a>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-points" aria-label="Ưu điểm">
+        <span>Chất lượng ổn định</span>
+        <span>Màu sắc đa dạng</span>
+        <span>Giao hàng toàn quốc</span>
+      </div>
+      <a class="topbar-phone" href="tel:0901355155" aria-label="Gọi 0901 355 155">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.7 2.6 9.2 2c.7-.2 1.4.2 1.7.8l1.2 2.9c.3.7.1 1.4-.4 1.9L10 9.2a15.8 15.8 0 0 0 4.8 4.8l1.6-1.7c.5-.5 1.3-.7 1.9-.4l2.9 1.2c.7.3 1 1 .8 1.7l-.6 2.5c-.2.8-.9 1.4-1.8 1.4C11.5 18.7 5.3 12.5 5.3 4.4c0-.9.6-1.6 1.4-1.8Z"/></svg>
+        <span>Tư vấn & báo giá: <strong>0901 355 155</strong></span>
+      </a>
+    </div>
+  </div>
 
   <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Trang chủ Vải Thun Minh Khôi">
-        <img src="assets/logo-minh-khoi.png" alt="Logo Vải Thun Minh Khôi">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Vải Thun Minh Khôi - Trang chủ">
+        <span class="brand-mark" aria-hidden="true">MK</span>
+        <span class="brand-copy"><strong>MINH KHÔI</strong><small>TEXTILE</small></span>
       </a>
-      <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      <nav class="main-nav" aria-label="Điều hướng chính">
+
+      <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính">
+        <a class="active" href="#top">Trang chủ</a>
         <a href="#gioi-thieu">Giới thiệu</a>
         <a href="#san-pham">Sản phẩm</a>
-        <a href="#nang-luc">Năng lực</a>
-        <a href="#quy-trinh">Quy trình</a>
+        <a href="#bang-mau">Bảng màu</a>
         <a href="#lien-he">Liên hệ</a>
       </nav>
-      <a class="nav-cta" href="#lien-he">Nhận báo giá <span>↗</span></a>
+
+      <a class="header-cta" href="#lien-he">Báo giá ngay <span>→</span></a>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media" aria-hidden="true">
-        <img src="assets/products/vaithuncotton1.jpg" alt="">
+        <img src="assets/fabrics/cotton.jpg" alt="">
+        <img src="assets/fabrics/tici.jpg" alt="">
+        <img src="assets/fabrics/ca-sau.jpg" alt="">
       </div>
       <div class="hero-overlay"></div>
-      <div class="container hero-content reveal">
-        <p class="eyebrow light">MINH KHÔI TEXTILE</p>
-        <h1>Chất liệu tốt.<br>Thành phẩm đẹp.</h1>
-        <p class="hero-desc">Nguồn vải thun đa dạng cho xưởng may, thương hiệu thời trang và doanh nghiệp. Tư vấn đúng chất liệu, định lượng và nhu cầu sử dụng.</p>
+      <div class="container hero-content">
+        <p class="hero-kicker">VẢI THUN MINH KHÔI</p>
+        <h1 id="hero-title">Chất lượng ổn định<br>Đáp ứng mọi nhu cầu</h1>
+        <p class="hero-lead">Cung cấp đa dạng các dòng vải thun cho xưởng may, local brand và doanh nghiệp trên toàn quốc.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#san-pham">Khám phá chất liệu</a>
-          <a class="btn btn-ghost" href="#lien-he">Liên hệ tư vấn</a>
+          <a class="btn btn-accent" href="#san-pham">Xem sản phẩm <span>→</span></a>
+          <a class="btn btn-outline" href="#lien-he">Báo giá ngay <span>→</span></a>
         </div>
       </div>
-      <div class="hero-index"><span>01</span><i></i><span>MINH KHÔI / 2026</span></div>
+      <div class="hero-dots" aria-hidden="true"><span class="current"></span><span></span><span></span></div>
     </section>
 
-    <section class="ticker" aria-label="Các dòng vải">
-      <div class="ticker-track">
-        <span>COTTON 4 CHIỀU</span><b>•</b><span>BAMBOO</span><b>•</b><span>VISCO</span><b>•</b><span>CÁ SẤU POLY</span><b>•</b><span>MÈ THỂ THAO</span><b>•</b><span>TICI</span><b>•</b>
-        <span>COTTON 4 CHIỀU</span><b>•</b><span>BAMBOO</span><b>•</b><span>VISCO</span><b>•</b><span>CÁ SẤU POLY</span><b>•</b><span>MÈ THỂ THAO</span><b>•</b><span>TICI</span><b>•</b>
-      </div>
-    </section>
-
-    <section class="section intro" id="gioi-thieu">
-      <div class="container intro-grid">
-        <div class="section-kicker reveal"><span>01</span><p>VỀ MINH KHÔI</p></div>
-        <div class="intro-copy reveal">
-          <h2>Không chỉ bán vải.<br>Chúng tôi cung cấp giải pháp chất liệu.</h2>
-          <p>Vải Thun Minh Khôi tập trung vào nguồn hàng ổn định, tư vấn thực tế và hỗ trợ nhanh cho từng nhu cầu sản xuất. Từ chọn chất liệu, định lượng, màu sắc đến ứng dụng thành phẩm, mọi thông tin đều được trao đổi rõ ràng.</p>
-          <a class="arrow-link" href="#nang-luc">Tìm hiểu năng lực <span>→</span></a>
-        </div>
-        <div class="intro-stats reveal">
-          <div><strong>06+</strong><span>Dòng vải chủ lực</span></div>
-          <div><strong>Toàn quốc</strong><span>Hỗ trợ giao hàng</span></div>
-          <div><strong>Linh hoạt</strong><span>Dệt, nhuộm, in theo yêu cầu</span></div>
-        </div>
+    <section class="benefits" aria-label="Lợi ích nổi bật">
+      <div class="container benefits-grid">
+        <article class="benefit">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 30 8l7-1 3 7 6 4-3 7 1 7-7 3-4 7-7-3-7 3-4-7-7-3 1-7-3-7 6-4 3-7 7 1 6-4Z"/><path d="m17 24 5 5 10-11"/></svg>
+          <div><h2>Chất lượng ổn định</h2><p>Nguồn vải được chọn lọc và kiểm tra kỹ trước khi giao.</p></div>
+        </article>
+        <article class="benefit">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5a19 19 0 1 0 0 38h4a5 5 0 0 0 0-10h-3a3 3 0 0 1 0-6h4a14 14 0 0 0-5-22Z"/><circle cx="15" cy="17" r="2"/><circle cx="23" cy="12" r="2"/><circle cx="33" cy="18" r="2"/></svg>
+          <div><h2>Màu sắc đa dạng</h2><p>Nhiều lựa chọn phù hợp sản phẩm và định hướng thương hiệu.</p></div>
+        </article>
+        <article class="benefit">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 11h24v24H5zM29 20h8l6 7v8H29z"/><circle cx="14" cy="37" r="4"/><circle cx="36" cy="37" r="4"/></svg>
+          <div><h2>Giao hàng toàn quốc</h2><p>Đóng gói kỹ, hỗ trợ giao hàng nhanh và đúng hẹn.</p></div>
+        </article>
+        <article class="benefit">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 26v-4a16 16 0 0 1 32 0v4"/><path d="M8 24H4v10h8V24H8Zm32 0h4v10h-8V24h4ZM40 34c0 6-4 9-11 9"/></svg>
+          <div><h2>Tư vấn tận tâm</h2><p>Gợi ý chất liệu và định lượng theo nhu cầu sản xuất thực tế.</p></div>
+        </article>
       </div>
     </section>
 
-    <section class="section products-section" id="san-pham">
+    <section class="section products" id="san-pham">
       <div class="container">
-        <div class="heading-row reveal">
-          <div><p class="eyebrow">BỘ SƯU TẬP CHẤT LIỆU</p><h2>Các dòng vải tiêu biểu</h2></div>
-          <p>Bấm vào từng sản phẩm để xem hình ảnh thực tế. Danh mục được cập nhật theo nguồn hàng của Minh Khôi.</p>
+        <div class="section-title centered reveal">
+          <p>SẢN PHẨM NỔI BẬT</p>
+          <h2>Các loại vải thun</h2>
+          <span class="title-line"></span>
         </div>
 
         <div class="product-grid">
-          <article class="product-card reveal" data-title="Cotton 4 chiều" data-desc="Mềm, co giãn tốt, phù hợp áo thun, đồ trẻ em và thời trang hằng ngày." data-gallery="assets/products/vaithuncotton1.jpg,assets/products/vaithuncotton2.jpg,assets/products/vaithuncotton3.jpg">
-            <button class="product-open" type="button" aria-label="Xem Cotton 4 chiều">
-              <div class="product-image"><img src="assets/products/vaithuncotton1.jpg" alt="Vải thun Cotton 4 chiều" loading="lazy"><span class="image-count">03 ảnh</span></div>
-              <div class="product-info"><span class="product-no">01</span><div><h3>Cotton 4 chiều</h3><p>Co giãn · Mềm · Dễ ứng dụng</p></div><i>↗</i></div>
-            </button>
-          </article>
-
-          <article class="product-card reveal" data-title="Bamboo" data-desc="Bề mặt mịn, cảm giác mềm thoáng, phù hợp các dòng thời trang và đồ mặc cao cấp." data-gallery="assets/products/vaithunbamboo.jpg">
-            <button class="product-open" type="button" aria-label="Xem Bamboo">
-              <div class="product-image"><img src="assets/products/vaithunbamboo.jpg" alt="Vải thun Bamboo" loading="lazy"></div>
-              <div class="product-info"><span class="product-no">02</span><div><h3>Bamboo</h3><p>Mịn · Mềm · Thoáng</p></div><i>↗</i></div>
-            </button>
-          </article>
-
-          <article class="product-card reveal" data-title="Visco" data-desc="Chất vải rũ mềm, nhẹ và phù hợp nhiều thiết kế thời trang cần độ rơi tự nhiên." data-gallery="assets/products/vaithunvisco.jpg">
-            <button class="product-open" type="button" aria-label="Xem Visco">
-              <div class="product-image"><img src="assets/products/vaithunvisco.jpg" alt="Vải thun Visco" loading="lazy"></div>
-              <div class="product-info"><span class="product-no">03</span><div><h3>Visco</h3><p>Rũ · Nhẹ · Mềm</p></div><i>↗</i></div>
-            </button>
-          </article>
-
-          <article class="product-card reveal" data-title="Cá sấu Poly" data-desc="Bề mặt dệt đặc trưng, đứng form, phù hợp áo polo, đồng phục và sản phẩm cần độ bền." data-gallery="assets/products/vaithuncasau.jpg">
-            <button class="product-open" type="button" aria-label="Xem Cá sấu Poly">
-              <div class="product-image"><img src="assets/products/vaithuncasau.jpg" alt="Vải thun Cá sấu Poly" loading="lazy"></div>
-              <div class="product-info"><span class="product-no">04</span><div><h3>Cá sấu Poly</h3><p>Đứng form · Bền · Polo</p></div><i>↗</i></div>
-            </button>
-          </article>
-
-          <article class="product-card reveal" data-title="Mè thể thao" data-desc="Cấu trúc thoáng khí, nhanh khô, phù hợp áo thể thao, đồ vận động và đồng phục." data-gallery="assets/products/vaithunmethethao.jpg">
-            <button class="product-open" type="button" aria-label="Xem Mè thể thao">
-              <div class="product-image"><img src="assets/products/vaithunmethethao.jpg" alt="Vải thun Mè thể thao" loading="lazy"></div>
-              <div class="product-info"><span class="product-no">05</span><div><h3>Mè thể thao</h3><p>Thoáng khí · Nhanh khô</p></div><i>↗</i></div>
-            </button>
-          </article>
-
-          <article class="product-card reveal" data-title="TICI" data-desc="Dòng TICI cân bằng giữa độ mềm, độ bền và khả năng giữ form; phù hợp áo thun và nhiều sản phẩm may mặc phổ biến." data-gallery="assets/products/vaithuntici4chieu.jpg,assets/products/vaithuntici4chieu2.jpg">
-            <button class="product-open" type="button" aria-label="Xem TICI">
-              <div class="product-image"><img src="assets/products/vaithuntici4chieu.jpg" alt="Vải thun TICI" loading="lazy"><span class="image-count">02 ảnh</span></div>
-              <div class="product-info"><span class="product-no">06</span><div><h3>TICI</h3><p>Mềm · Bền · Giữ form</p></div><i>↗</i></div>
-            </button>
-          </article>
+          <button class="product-card reveal" type="button" data-name="Cotton" data-image="assets/fabrics/cotton.jpg" data-desc="Bề mặt mềm, dễ ứng dụng cho áo thun và nhiều dòng thời trang.">
+            <img src="assets/fabrics/cotton.jpg" alt="Vải thun Cotton màu xanh" loading="lazy">
+            <span class="product-meta"><strong>Cotton</strong><i>→</i></span>
+          </button>
+          <button class="product-card reveal" type="button" data-name="Bamboo" data-image="assets/fabrics/bamboo.jpg" data-desc="Chất liệu mềm mại, thoáng và phù hợp sản phẩm cần cảm giác dễ chịu.">
+            <img src="assets/fabrics/bamboo.jpg" alt="Vải Bamboo nhiều màu" loading="lazy">
+            <span class="product-meta"><strong>Bamboo</strong><i>→</i></span>
+          </button>
+          <button class="product-card reveal" type="button" data-name="Cá sấu" data-image="assets/fabrics/ca-sau.jpg" data-desc="Bề mặt dệt đặc trưng, phù hợp áo polo, đồng phục và local brand.">
+            <img src="assets/fabrics/ca-sau.jpg" alt="Vải cá sấu màu xanh" loading="lazy">
+            <span class="product-meta"><strong>Cá sấu</strong><i>→</i></span>
+          </button>
+          <button class="product-card reveal" type="button" data-name="Mè thể thao" data-image="assets/fabrics/me-the-thao.jpg" data-desc="Thoáng khí, phù hợp đồ thể thao và các sản phẩm vận động.">
+            <img src="assets/fabrics/me-the-thao.jpg" alt="Vải mè thể thao màu xám" loading="lazy">
+            <span class="product-meta"><strong>Mè thể thao</strong><i>→</i></span>
+          </button>
+          <button class="product-card reveal" type="button" data-name="TICI" data-image="assets/fabrics/tici.jpg" data-desc="Dòng vải phổ biến, cân bằng giữa độ bền, độ mềm và chi phí.">
+            <img src="assets/fabrics/tici.jpg" alt="Vải TICI màu xanh" loading="lazy">
+            <span class="product-meta"><strong>TICI</strong><i>→</i></span>
+          </button>
+          <button class="product-card reveal" type="button" data-name="Visco" data-image="assets/fabrics/visco.jpg" data-desc="Mềm, rũ và thích hợp với nhiều thiết kế thời trang hiện đại.">
+            <img src="assets/fabrics/visco.jpg" alt="Vải Visco màu đỏ" loading="lazy">
+            <span class="product-meta"><strong>Visco</strong><i>→</i></span>
+          </button>
         </div>
+
+        <div class="section-action reveal"><a class="btn btn-navy" href="#lien-he">Nhận tư vấn sản phẩm <span>→</span></a></div>
       </div>
     </section>
 
-    <section class="section capability-section" id="nang-luc">
-      <div class="container capability-grid">
-        <div class="capability-image reveal"><img src="assets/products/vaithuncotton2.jpg" alt="Bảng màu vải thun Minh Khôi" loading="lazy"><span>MINH KHÔI TEXTILE</span></div>
-        <div class="capability-copy reveal">
-          <p class="eyebrow light">NĂNG LỰC CUNG ỨNG</p>
-          <h2>Từ lựa chọn chất liệu đến giao hàng.</h2>
-          <div class="service-list">
-            <div><b>01</b><section><h3>Tư vấn chất liệu</h3><p>Gợi ý theo mẫu thành phẩm, định lượng, ngân sách và mục đích sử dụng.</p></section></div>
-            <div><b>02</b><section><h3>Dệt theo yêu cầu</h3><p>Phối hợp triển khai các yêu cầu riêng về cấu trúc và chất vải.</p></section></div>
-            <div><b>03</b><section><h3>Nhuộm & in</h3><p>Hỗ trợ màu sắc, họa tiết và phương án phù hợp với thiết kế.</p></section></div>
-            <div><b>04</b><section><h3>Đóng gói & giao hàng</h3><p>Chuẩn bị hàng rõ ràng và hỗ trợ vận chuyển toàn quốc.</p></section></div>
+    <section class="section about" id="gioi-thieu">
+      <div class="container about-grid">
+        <div class="about-collage reveal" aria-label="Hình ảnh các loại vải">
+          <img class="about-main" src="assets/fabrics/visco.jpg" alt="Vải Visco màu đỏ" loading="lazy">
+          <img class="about-small" src="assets/fabrics/me-the-thao.jpg" alt="Vải mè thể thao màu xám" loading="lazy">
+          <div class="about-badge"><strong>MINH KHÔI</strong><span>TEXTILE</span></div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">VỀ MINH KHÔI TEXTILE</p>
+          <h2>Giải pháp vải thun rõ ràng, thực tế và phù hợp sản xuất</h2>
+          <p>Chúng tôi tập trung vào nguồn hàng ổn định, tư vấn đúng nhu cầu và cách làm việc minh bạch để xưởng may dễ dàng lựa chọn chất liệu phù hợp.</p>
+          <div class="about-list">
+            <div><span>01</span><p><strong>Đa dạng chất liệu</strong>Phù hợp áo thun, polo, thể thao, trẻ em và thời trang.</p></div>
+            <div><span>02</span><p><strong>Hỗ trợ chọn mẫu</strong>Tư vấn theo định lượng, độ co giãn và ngân sách.</p></div>
+            <div><span>03</span><p><strong>Nguồn hàng ổn định</strong>Sẵn sàng đáp ứng đơn hàng từ nhỏ đến số lượng lớn.</p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section process" id="quy-trinh">
-      <div class="container">
-        <div class="heading-row reveal"><div><p class="eyebrow">QUY TRÌNH HỢP TÁC</p><h2>Rõ ràng trong từng bước</h2></div><p>Một quy trình ngắn gọn giúp khách hàng dễ kiểm soát chất liệu, thời gian và phương án giao nhận.</p></div>
-        <div class="steps">
-          <article class="reveal"><span>01</span><h3>Gửi nhu cầu</h3><p>Loại vải, định lượng, màu sắc, số lượng dự kiến.</p></article>
-          <article class="reveal"><span>02</span><h3>Tư vấn & mẫu</h3><p>Đề xuất phương án và đối chiếu hình ảnh hoặc mẫu thực tế.</p></article>
-          <article class="reveal"><span>03</span><h3>Xác nhận</h3><p>Thống nhất thông tin đơn hàng, thời gian và giao nhận.</p></article>
-          <article class="reveal"><span>04</span><h3>Giao hàng</h3><p>Kiểm tra, đóng gói và bàn giao đến khách hàng.</p></article>
+    <section class="section color-section" id="bang-mau">
+      <div class="container color-grid">
+        <div class="color-copy reveal">
+          <p class="eyebrow">BẢNG MÀU</p>
+          <h2>Nhiều lựa chọn cho từng dòng sản phẩm</h2>
+          <p>Màu sắc hiển thị trên màn hình chỉ mang tính tham khảo. Liên hệ Minh Khôi để nhận bảng màu hoặc mẫu vải thực tế.</p>
+          <a class="btn btn-accent" href="#lien-he">Nhận bảng màu <span>→</span></a>
+        </div>
+        <div class="swatch-panel reveal" aria-label="Mẫu màu tham khảo">
+          <span style="--swatch:#f3eee5"></span><span style="--swatch:#e4c8c0"></span><span style="--swatch:#d98d91"></span><span style="--swatch:#bb2b38"></span>
+          <span style="--swatch:#e1d36f"></span><span style="--swatch:#9bc554"></span><span style="--swatch:#4c8a61"></span><span style="--swatch:#1f5944"></span>
+          <span style="--swatch:#9ec8de"></span><span style="--swatch:#4e80be"></span><span style="--swatch:#304f8a"></span><span style="--swatch:#242c55"></span>
+          <span style="--swatch:#c9cbd0"></span><span style="--swatch:#858a94"></span><span style="--swatch:#4d515a"></span><span style="--swatch:#17191d"></span>
         </div>
       </div>
     </section>
 
-    <section class="contact-section" id="lien-he">
+    <section class="section contact" id="lien-he">
       <div class="container contact-grid">
-        <div class="contact-title reveal"><p class="eyebrow light">BẮT ĐẦU ĐƠN HÀNG</p><h2>Cần tìm loại vải phù hợp?</h2><p>Liên hệ Minh Khôi để được tư vấn nhanh theo sản phẩm bạn đang dự định may.</p></div>
-        <div class="contact-actions reveal">
-          <a href="tel:0901355155"><span>Hotline</span><strong>0901 355 155</strong><i>↗</i></a>
-          <a href="#"><span>Zalo</span><strong>Chat với Minh Khôi</strong><i>↗</i></a>
-          <a href="#"><span>Facebook</span><strong>Vải Thun Minh Khôi</strong><i>↗</i></a>
+        <div class="contact-copy reveal">
+          <p class="eyebrow">LIÊN HỆ</p>
+          <h2>Trao đổi nhu cầu và nhận báo giá nhanh</h2>
+          <p>Gửi loại vải, màu sắc, định lượng và số lượng dự kiến. Minh Khôi sẽ hỗ trợ tư vấn phương án phù hợp.</p>
+          <div class="contact-links">
+            <a href="tel:0901355155"><span>Hotline</span><strong>0901 355 155</strong></a>
+            <a href="https://zalo.me/0901355155" target="_blank" rel="noopener"><span>Zalo</span><strong>Chat với Minh Khôi</strong></a>
+          </div>
         </div>
+
+        <form class="quote-form reveal" id="quote-form">
+          <div class="field-row">
+            <label>Họ và tên<input name="name" type="text" placeholder="Nhập họ và tên" required></label>
+            <label>Số điện thoại<input name="phone" type="tel" placeholder="Nhập số điện thoại" required></label>
+          </div>
+          <label>Loại vải quan tâm<select name="fabric"><option>Cotton</option><option>Bamboo</option><option>Cá sấu</option><option>Mè thể thao</option><option>TICI</option><option>Visco</option><option>Loại khác</option></select></label>
+          <label>Nhu cầu<textarea name="message" rows="4" placeholder="Ví dụ: cần mẫu màu, định lượng, số lượng dự kiến..."></textarea></label>
+          <button class="btn btn-navy" type="submit">Gửi yêu cầu tư vấn <span>→</span></button>
+          <small>Biểu mẫu sẽ mở Zalo để bạn gửi thông tin trực tiếp.</small>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-main">
-      <div class="footer-brand"><img src="assets/logo-minh-khoi.png" alt="Logo Vải Thun Minh Khôi"><p>Giải pháp chất liệu vải thun cho xưởng may và thương hiệu thời trang.</p></div>
-      <div><h4>Danh mục</h4><a href="#san-pham">Cotton 4 chiều</a><a href="#san-pham">Bamboo</a><a href="#san-pham">Visco</a><a href="#san-pham">TICI</a></div>
-      <div><h4>Thông tin</h4><a href="#gioi-thieu">Giới thiệu</a><a href="#nang-luc">Năng lực</a><a href="#quy-trinh">Quy trình</a><a href="#lien-he">Liên hệ</a></div>
-      <div><h4>Liên hệ</h4><p>Hotline: 0901 355 155</p><p>Địa chỉ: Đang cập nhật</p></div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#top"><span class="brand-mark">MK</span><span class="brand-copy"><strong>MINH KHÔI</strong><small>TEXTILE</small></span></a>
+        <p>Cung cấp vải thun cho xưởng may, local brand và doanh nghiệp.</p>
+      </div>
+      <div><h2>Danh mục</h2><a href="#san-pham">Các loại vải</a><a href="#bang-mau">Bảng màu</a><a href="#gioi-thieu">Giới thiệu</a></div>
+      <div><h2>Liên hệ</h2><a href="tel:0901355155">0901 355 155</a><a href="https://zalo.me/0901355155" target="_blank" rel="noopener">Zalo Minh Khôi</a><p>Giao hàng toàn quốc</p></div>
     </div>
-    <div class="container footer-bottom"><span>© 2026 Vải Thun Minh Khôi</span><a href="#top">Lên đầu trang ↑</a></div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Vải Thun Minh Khôi.</span><a href="#top">Lên đầu trang ↑</a></div>
   </footer>
 
-  <a class="floating-call" href="tel:0901355155" aria-label="Gọi hotline">☎</a>
+  <a class="floating-contact" href="tel:0901355155" aria-label="Gọi Vải Thun Minh Khôi">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.7 2.6 9.2 2c.7-.2 1.4.2 1.7.8l1.2 2.9c.3.7.1 1.4-.4 1.9L10 9.2a15.8 15.8 0 0 0 4.8 4.8l1.6-1.7c.5-.5 1.3-.7 1.9-.4l2.9 1.2c.7.3 1 1 .8 1.7l-.6 2.5c-.2.8-.9 1.4-1.8 1.4C11.5 18.7 5.3 12.5 5.3 4.4c0-.9.6-1.6 1.4-1.8Z"/></svg>
+  </a>
 
-  <div class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <dialog class="product-modal" id="product-modal">
     <button class="modal-close" type="button" aria-label="Đóng">×</button>
-    <div class="modal-panel">
-      <div class="modal-gallery"><img class="modal-main-image" src="" alt=""><div class="modal-thumbs"></div></div>
-      <div class="modal-copy"><p class="eyebrow">MINH KHÔI TEXTILE</p><h2 id="modal-title"></h2><p class="modal-desc"></p><a class="btn btn-primary" href="#lien-he">Nhận tư vấn & báo giá</a></div>
-    </div>
-  </div>
+    <img id="modal-image" src="" alt="">
+    <div class="modal-copy"><p>SẢN PHẨM</p><h2 id="modal-title"></h2><span id="modal-desc"></span><a class="btn btn-navy" href="#lien-he" id="modal-contact">Liên hệ báo giá <b>→</b></a></div>
+  </dialog>
 
   <script src="script.js"></script>
 </body>

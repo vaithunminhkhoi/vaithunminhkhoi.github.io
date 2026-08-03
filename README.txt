@@ -1,9 +1,10 @@
-VẢI THUN MINH KHÔI - WEBSITE
+VẢI THUN MINH KHÔI - WEBSITE BẢN CHUYÊN NGHIỆP
 
-Cách đăng lên GitHub Pages:
+Cách cập nhật lên GitHub Pages:
 1. Giải nén file ZIP.
-2. Mở thư mục vaithunminhkhoi.github.io-main.
-3. Upload TOÀN BỘ file và thư mục bên trong lên repository GitHub Pages.
-4. Commit changes và chờ GitHub cập nhật.
+2. Mở repository website trên GitHub.
+3. Upload toàn bộ index.html, style.css, script.js và thư mục assets vào thư mục gốc.
+4. Chọn Commit changes.
+5. Chờ GitHub Pages cập nhật khoảng 1-3 phút.
 
-Lưu ý: Không upload nguyên file ZIP trực tiếp vào repository. Cần giải nén trước.
+Ảnh vải trong assets/fabrics giữ nguyên kích thước 740 x 740 px. Chỉ phần chữ/logo/số điện thoại cũ đã được xử lý; không cắt khung hình.
