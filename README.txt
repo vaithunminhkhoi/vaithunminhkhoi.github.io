@@ -1,18 +1,14 @@
-VẢI THUN MINH KHÔI – WEBSITE V5
+VẢI THUN MINH KHÔI — WEBSITE V6
 
-CÁCH UP LÊN GITHUB
+Nội dung cập nhật:
+- Giữ nguyên toàn bộ các phần phía dưới của bản V5.
+- Làm lại riêng khu vực đầu trang theo bố cục đã chốt: topbar, header trắng, banner vải lớn, CTA và dải 4 ưu điểm.
+- Banner dùng đúng ảnh vải có trong project, không tạo thêm ảnh AI.
+- Banner có 3 slide, nút chuyển ảnh và chấm điều hướng.
+- Giữ nguyên bảng màu, ảnh cửa hàng, thông tin liên hệ và form báo giá.
+
+Cách đăng GitHub Pages:
 1. Giải nén file ZIP.
-2. Upload toàn bộ index.html, style.css, script.js và thư mục assets lên repository GitHub Pages.
+2. Upload index.html, style.css, script.js và thư mục assets lên thư mục gốc repository.
 3. Commit changes.
-4. Đợi khoảng 1–5 phút rồi nhấn Ctrl + F5 để tải lại website.
-
-FORM BÁO GIÁ
-- Form đang gửi về: thanhtu.gosu@gmail.com
-- Dịch vụ: FormSubmit.
-- Lần đầu có khách gửi, email sẽ nhận thư xác nhận kích hoạt từ FormSubmit.
-- Bấm xác nhận một lần; sau đó các yêu cầu mới sẽ gửi thẳng về email này.
-
-THÔNG TIN WEBSITE
-- Hotline: 0901 355 155
-- Địa chỉ: 30 Phạm Phú Thứ - P. Bảy Hiền - HCM
-- Google Maps: https://maps.app.goo.gl/nYTP4aqTXQi8sjoh7?g_st=ic
+4. Chờ GitHub Pages cập nhật, sau đó nhấn Ctrl + F5.

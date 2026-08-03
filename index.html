@@ -42,7 +42,7 @@
       <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính">
         <a class="active" href="#trang-chu">Trang chủ</a>
         <a href="#gioi-thieu">Giới thiệu</a>
-        <a href="#san-pham">Sản phẩm</a>
+        <a class="nav-products" href="#san-pham">Sản phẩm <span aria-hidden="true">⌄</span></a>
         <a href="#bang-mau">Bảng màu</a>
         <a href="#cua-hang">Cửa hàng</a>
         <a href="#lien-he">Liên hệ</a>
@@ -53,22 +53,47 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-grid">
+    <section class="hero hero-premium" aria-labelledby="hero-title">
+      <div class="hero-slides" aria-hidden="true">
+        <div class="hero-slide is-active">
+          <div class="hero-image-split">
+            <img class="hero-image hero-image-left" src="assets/fabrics/ca-sau.jpg" alt="">
+            <img class="hero-image hero-image-right" src="assets/fabrics/me-the-thao.jpg" alt="">
+          </div>
+        </div>
+        <div class="hero-slide">
+          <div class="hero-image-split">
+            <img class="hero-image hero-image-left hero-image-tici" src="assets/fabrics/tici.jpg" alt="">
+            <img class="hero-image hero-image-right hero-image-cotton" src="assets/fabrics/cotton.jpg" alt="">
+          </div>
+        </div>
+        <div class="hero-slide">
+          <div class="hero-image-split">
+            <img class="hero-image hero-image-left hero-image-bamboo" src="assets/fabrics/bamboo.jpg" alt="">
+            <img class="hero-image hero-image-right hero-image-visco" src="assets/fabrics/visco.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container hero-content">
         <div class="hero-copy">
-          <p class="eyebrow eyebrow-light">VẢI THUN MINH KHÔI</p>
+          <p class="hero-kicker">VẢI THUN MINH KHÔI</p>
           <h1 id="hero-title">Chất lượng ổn định<br>Đáp ứng mọi nhu cầu</h1>
-          <p class="hero-lead">Cung cấp đa dạng các dòng vải thun cho xưởng may, local brand và doanh nghiệp trên toàn quốc.</p>
+          <p class="hero-lead">Cung cấp đa dạng các loại vải thun cho xưởng may, local brand và thương hiệu thời trang.</p>
           <div class="hero-actions">
             <a class="btn btn-accent" href="#san-pham">Xem sản phẩm <span>→</span></a>
             <a class="btn btn-outline" href="#lien-he">Báo giá ngay <span>→</span></a>
           </div>
         </div>
-        <div class="hero-gallery" aria-label="Hình ảnh vải Minh Khôi">
-          <figure class="hero-card hero-card-main"><img src="assets/fabrics/ca-sau.jpg" alt="Vải cá sấu màu xanh" fetchpriority="high"></figure>
-          <figure class="hero-card"><img src="assets/fabrics/me-the-thao.jpg" alt="Vải mè thể thao màu xám" fetchpriority="high"></figure>
-          <figure class="hero-card"><img src="assets/fabrics/tici.jpg" alt="Vải TICI màu xanh" fetchpriority="high"></figure>
-        </div>
+      </div>
+
+      <button class="hero-arrow hero-prev" type="button" aria-label="Ảnh banner trước">‹</button>
+      <button class="hero-arrow hero-next" type="button" aria-label="Ảnh banner tiếp theo">›</button>
+      <div class="hero-dots" role="tablist" aria-label="Chọn ảnh banner">
+        <button class="is-active" type="button" role="tab" aria-label="Banner 1" aria-selected="true"></button>
+        <button type="button" role="tab" aria-label="Banner 2" aria-selected="false"></button>
+        <button type="button" role="tab" aria-label="Banner 3" aria-selected="false"></button>
       </div>
     </section>
 
