@@ -1,16 +1,16 @@
 (() => {
-  const menuButton = document.querySelector('.menu-toggle');
+  const navToggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.main-nav');
 
-  menuButton?.addEventListener('click', () => {
+  navToggle?.addEventListener('click', () => {
     const open = nav.classList.toggle('open');
-    menuButton.setAttribute('aria-expanded', String(open));
+    navToggle.setAttribute('aria-expanded', String(open));
   });
 
   nav?.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
       nav.classList.remove('open');
-      menuButton?.setAttribute('aria-expanded', 'false');
+      navToggle?.setAttribute('aria-expanded', 'false');
     });
   });
 
@@ -22,60 +22,60 @@
       }
     });
   }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
 
-  document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
-
-  const sections = [...document.querySelectorAll('main section[id], header[id]')];
   const navLinks = [...document.querySelectorAll('.main-nav a')];
-  const setActiveLink = () => {
-    const current = sections.reduce((selected, section) => {
-      return window.scrollY + 150 >= section.offsetTop ? section : selected;
-    }, sections[0]);
+  const sections = [...document.querySelectorAll('header[id], main section[id]')];
+  const setActive = () => {
+    let current = sections[0];
+    sections.forEach((section) => {
+      if (window.scrollY + 180 >= section.offsetTop) current = section;
+    });
     navLinks.forEach((link) => link.classList.toggle('active', link.getAttribute('href') === `#${current?.id}`));
   };
-  window.addEventListener('scroll', setActiveLink, { passive: true });
-  setActiveLink();
+  window.addEventListener('scroll', setActive, { passive: true });
+  setActive();
 
-  const modal = document.querySelector('#product-modal');
+  const productModal = document.querySelector('#product-modal');
   const modalImage = document.querySelector('#modal-image');
   const modalTitle = document.querySelector('#modal-title');
-  const modalDesc = document.querySelector('#modal-desc');
-  const modalClose = document.querySelector('.modal-close');
+  const modalDescription = document.querySelector('#modal-description');
   const modalContact = document.querySelector('#modal-contact');
 
   document.querySelectorAll('.product-card').forEach((card) => {
     card.addEventListener('click', () => {
-      const name = card.dataset.name || 'Sản phẩm';
       modalImage.src = card.dataset.image || '';
-      modalImage.alt = `Vải ${name}`;
-      modalTitle.textContent = name;
-      modalDesc.textContent = card.dataset.desc || '';
-      modal.showModal();
+      modalImage.alt = `Vải ${card.dataset.title || ''}`;
+      modalTitle.textContent = card.dataset.title || 'Sản phẩm';
+      modalDescription.textContent = card.dataset.description || '';
+      productModal?.showModal();
     });
   });
 
-  const closeModal = () => modal?.open && modal.close();
-  modalClose?.addEventListener('click', closeModal);
-  modalContact?.addEventListener('click', closeModal);
-  modal?.addEventListener('click', (event) => {
-    const rect = modal.getBoundingClientRect();
+  const closeDialog = (dialog) => {
+    if (dialog?.open) dialog.close();
+  };
+  document.querySelector('.product-modal .modal-close')?.addEventListener('click', () => closeDialog(productModal));
+  modalContact?.addEventListener('click', () => closeDialog(productModal));
+  productModal?.addEventListener('click', (event) => {
+    const rect = productModal.getBoundingClientRect();
     const inside = event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom;
-    if (!inside) closeModal();
+    if (!inside) closeDialog(productModal);
   });
 
-  const quoteForm = document.querySelector('#quote-form');
-  quoteForm?.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const data = new FormData(quoteForm);
-    const message = [
-      'Xin chào Vải Thun Minh Khôi,',
-      `Tôi tên: ${data.get('name') || ''}`,
-      `Số điện thoại: ${data.get('phone') || ''}`,
-      `Loại vải quan tâm: ${data.get('fabric') || ''}`,
-      `Nhu cầu: ${data.get('message') || ''}`
-    ].join('\n');
-    navigator.clipboard?.writeText(message).catch(() => {});
-    window.open('https://zalo.me/0901355155', '_blank', 'noopener');
+  const imageModal = document.querySelector('#image-modal');
+  const zoomImage = document.querySelector('#zoom-image');
+  document.querySelectorAll('[data-zoom]').forEach((button) => {
+    button.addEventListener('click', () => {
+      zoomImage.src = button.dataset.zoom || '';
+      imageModal?.showModal();
+    });
+  });
+  document.querySelector('.image-modal-close')?.addEventListener('click', () => closeDialog(imageModal));
+  imageModal?.addEventListener('click', (event) => {
+    const rect = imageModal.getBoundingClientRect();
+    const inside = event.clientX >= rect.left && event.clientX <= rect.right && event.clientY >= rect.top && event.clientY <= rect.bottom;
+    if (!inside) closeDialog(imageModal);
   });
 
   document.querySelector('#year').textContent = new Date().getFullYear();
