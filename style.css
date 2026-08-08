@@ -41,8 +41,8 @@ button{color:inherit}
 .brand-name small{font-size:14px;letter-spacing:.22em;margin-top:9px;font-weight:700}
 .main-nav{margin-left:auto;display:flex;align-items:center;gap:34px}
 .main-nav a{font-size:13px;font-weight:700;text-transform:uppercase;color:#122b56;position:relative;padding:35px 0;display:inline-flex;align-items:center;gap:7px}
-.main-nav a::after{content:"";position:absolute;height:2px;left:0;right:0;bottom:24px;background:var(--navy);transform:scaleX(0);transition:.2s}
-.main-nav a:hover::after,.main-nav a.active::after{transform:scaleX(1)}
+.main-nav a::after{content:"";position:absolute;height:2px;left:0;right:0;bottom:24px;background:#F5B200;transform:scaleX(0);transition:.2s}
+.main-nav a:hover{color:#F5B200}.main-nav a:hover::after{transform:scaleX(1)}.main-nav a.active::after{transform:scaleX(1);background:var(--navy)}
 .nav-products span{font-size:16px;line-height:1;transform:translateY(-1px)}
 .header-cta{display:inline-flex;align-items:center;gap:14px;background:var(--navy);color:#fff;padding:15px 25px;border-radius:6px;font-size:13px;font-weight:800;text-transform:uppercase;white-space:nowrap;box-shadow:0 8px 20px rgba(6,40,95,.16)}
 .header-cta:hover{background:var(--navy-soft)}
@@ -206,3 +206,13 @@ button{color:inherit}
   .product-modal[open]{display:block}.product-modal>img{max-height:55vh}.modal-copy{padding:28px}.modal-copy h2{font-size:31px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.product-card{transition:none}}
+
+/* V7 brand/logo + requested navigation refinements */
+.brand-logo{height:76px;min-width:250px;display:flex;align-items:center}
+.brand-logo img{width:245px;height:72px;object-fit:contain;object-position:left center}
+.topbar-benefits{flex-wrap:wrap}
+.topbar-benefits span{white-space:nowrap}
+.hero-premium h1{max-width:760px}
+
+@media(max-width:1100px){.brand-logo{min-width:205px;height:68px}.brand-logo img{width:200px;height:62px}.main-nav{gap:20px}.topbar-benefits{gap:14px}}
+@media(max-width:760px){.brand-logo{min-width:170px;height:58px}.brand-logo img{width:165px;height:54px}.hero-premium h1{font-size:34px;line-height:1.16}}
